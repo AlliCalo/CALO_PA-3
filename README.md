@@ -1,5 +1,5 @@
 # CALO_PA-3
-
+This repository shows the use and function of panda in python. And sample problems are also provided for our Programming Assignment 3 in ECE2112
 
 
 
