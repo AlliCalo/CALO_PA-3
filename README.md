@@ -77,7 +77,7 @@ Required check: The final DataFrame must contain exactly three rows and five col
 
 The code extracts three target car models Datsun 710, Lotus Europa, and Ferrari Dino, along with five specific attributes, but it fails to meet two core instructions.
 
-First, it relies on hard-coded row positions using ⁠cars.loc[[2, 27, 29]]⁠ instead of querying the ⁠Model⁠ column dynamically with ⁠.isin()⁠. Selecting the object via ⁠pd.DataFrame(...)⁠ to filter columns is also redundant. Second, the code checks ⁠selected_cars.size⁠, which returns the total cell count at 15, rather than ⁠selected_cars.shape⁠ to confirm the required (3, 5) row-and-column dimensions. While the printed table visually matches the goal, the implementation violates the prompt's explicit constraints.
+First, it relies using ⁠cars.loc[[2, 27, 29]]⁠ instead of querying the ⁠Model⁠ column dynamically with ⁠.isin()⁠. Selecting the object via ⁠pd.DataFrame(...)⁠ to filter columns is also redundant. Second, the code checks ⁠selected_cars.size⁠, which returns the total cell count at 15, rather than ⁠selected_cars.shape⁠ to confirm the required (3, 5) row-and-column dimensions. While the printed table visually matches the goal, the implementation violates the prompt's explicit constraints.
 
 
 
