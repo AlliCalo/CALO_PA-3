@@ -61,7 +61,8 @@ Required check: The final DataFrame must contain exactly three rows and five col
 
 ## CODE
 
-<img width="859" height="206" alt="image" src="https://github.com/user-attachments/assets/3017c329-d7d2-4e84-9605-dbfe38ea6bf9" />
+<img width="891" height="210" alt="image" src="https://github.com/user-attachments/assets/0018a0de-b6a2-4153-99c3-70b77ca62ee1" />
+
 
 
 ## EXPLANATION
