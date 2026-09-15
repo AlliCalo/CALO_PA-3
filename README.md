@@ -3,14 +3,14 @@ This repository shows the use and function of panda in python. And sample proble
 
 
 
-I. Intended Learning Outcomes
+# I. Intended Learning Outcomes
 At the end of this laboratory activity, the student should be able to:
 1. load a CSV dataset into a Pandas DataFrame;
 2. select rows and columns using positional and label-based indexing;
 3. filter records using conditions on a DataFrame column; and
 4. extract a well-defined subset of data without changing the source data.
 
-## DATABASE
+# DATABASE
 
 <img width="506" height="763" alt="image" src="https://github.com/user-attachments/assets/f9a36f9f-9097-4219-bded-6201c6756540" />
 
