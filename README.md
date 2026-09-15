@@ -30,6 +30,11 @@ use column labels.
 
 ## EXPLANATION
 
+This code filters a Pandas DataFrame named ⁠cars⁠ in two steps to isolate specific rows and columns.
+
+First, ⁠cars.iloc[5:10]⁠ extracts rows 6 through 10 (indices 5 to 9), utilizing Python’s zero-based indexing and exclusive upper bound. Storing this slice in ⁠cars_6_to_10⁠ and displaying it outputs those five records with all original columns intact.
+
+Second, ⁠cars_6_to_10[['Model', 'mpg', 'cyl', 'hp', 'gear']]⁠ narrows the data by selecting only five specific attributes: car model, fuel efficiency, cylinder count, horsepower, and forward gears. The final display shows the same five vehicles in a clean, focused table stripped of extraneous metrics.
 
 # B. MODEL LOOKUP
 
@@ -46,6 +51,9 @@ locate either model.
 
 ## EXPLANATION 
 
+This code uses Pandas' ⁠.loc⁠ indexer to query vehicle records dynamically through boolean conditions rather than hard-coded row positions.
+
+First, ⁠cars['Model'] == 'Toyota Corolla'⁠ matches the target model by value, retrieving its complete row across all attributes via the ⁠:⁠ column selector. Next, the script applies the same conditional logic to locate the ⁠'Pontiac Firebird'⁠, but supplies a list of column names—⁠['Model', 'mpg', 'hp', 'wt']⁠—instead of the full column slice. This dual-axis filtering extracts the exact vehicle and its four specified metrics in a single operation.
 
 
 # C. MULTI-MODEL SUBSETTING
@@ -67,7 +75,9 @@ Required check: The final DataFrame must contain exactly three rows and five col
 
 ## EXPLANATION
 
+The code extracts three target car models Datsun 710, Lotus Europa, and Ferrari Dino, along with five specific attributes, but it fails to meet two core instructions.
 
+First, it relies on hard-coded row positions using ⁠cars.loc[[2, 27, 29]]⁠ instead of querying the ⁠Model⁠ column dynamically with ⁠.isin()⁠. Selecting the object via ⁠pd.DataFrame(...)⁠ to filter columns is also redundant. Second, the code checks ⁠selected_cars.size⁠, which returns the total cell count at 15, rather than ⁠selected_cars.shape⁠ to confirm the required (3, 5) row-and-column dimensions. While the printed table visually matches the goal, the implementation violates the prompt's explicit constraints.
 
 
 
